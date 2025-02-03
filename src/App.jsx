@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import Mission from './components/Mission';
+import Main from './components/Main';
 import Instructors from './components/Instructors';
 import Programs from './components/Programs';
 import ContactButton from './components/ContactButton';
@@ -24,22 +24,20 @@ function App() {
       <Navbar />
 
       {/* Main Content */}
-      <div className="max-w-full h-auto relative px-4 sm:px-8 mx-auto top-24 xl:top-24 flex flex-col items-center gap-4 mt-4 sm:mt-8 lg:mt-7 lg:w-[80%] 2xl:w-[80%] 2xl:mt-12 2xl:gap-8 main-content">
-        <h1 className="text-center text-white text-base lg:text-xl 2xl:text-xl font-light font-poppins tracking-wide">HEADER</h1>
-        <div className="text-center text-zinc-100 text-4xl md:text-5xl lg:text-3xl 2xl:text-4xl 2xl:mb-4 font-normal font-inter tracking-widest text-stroke">HEADER</div>
-        
-        <Mission />
-        
+      <div className="max-w-full h-auto relative px-4 sm:px-8 mx-auto top-12 xl:top-24 flex flex-col items-center gap-4 mt-4 sm:mt-8 lg:mt-7 lg:w-[80%] 2xl:w-[80%] 2xl:mt-12 2xl:gap-8 main-content">
+
+        <Main />
+
         <hr className="w-full border-t border-gray-500 my-4 md:border-t-slate-700" />
-        
+
         <Instructors />
-        
+
         <hr className="w-full border-t border-gray-500 my-4 md:border-t-slate-700" />
-        
+
         <Programs />
-        
+
         <ContactButton handleMailtoClick={handleMailtoClick} />
-        
+
         <hr className="w-full border-t border-gray-500 my-0 md:border-t-slate-700" />
       </div>
 
