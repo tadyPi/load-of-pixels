@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 0.3px #ca5252;
+  ;
+  /* Adjust the stroke width and color as needed */
+  text-stroke: 1px black;
+  /* For non-webkit browsers */
+}
+
+.kid-D {
+  -webkit-text-stroke: 0.1px #a59292;
+  text-stroke: 1px black;
+}
+
+
+/* @media (max-width: 450px) {
+  .custom-header {
+    @apply text-base text-violet-50;
+  }
+} */
+
+@media (max-width: 490px) {
+  .custom-header {
+    @apply text-xs px-0;
+  }
+
+  .custom-px {
+    @apply px-3;
+  }
+
+  .follow-us {
+    @apply text-sm gap-2;
+  }
+
+  .icons-px {
+    @apply gap-2;
+  }
+
+  .text-stroke {
+    -webkit-text-stroke: 0.3px #d9db;
+    ;
+    /* Adjust the stroke width and color as needed */
+    text-stroke: 1px black;
+    /* For non-webkit browsers */
+  }
+
+  .main-content {
+    @apply mt-2;
+  }
+}
+
+@media (max-width: 375px) {
+  .custom-header {
+    @apply text-[0.65em] px-0;
+  }
+
+  .custom-px {
+    @apply px-3;
+  }
+
+  .follow-us {
+    @apply text-sm gap-2;
+  }
+
+  .icons-px {
+    @apply gap-2;
+  }
+
+  .text-stroke {
+    -webkit-text-stroke: 0.3px #d9db;
+    ;
+    /* Adjust the stroke width and color as needed */
+    text-stroke: 1px black;
+    /* For non-webkit browsers */
+  }
+
+  .main-content {
+    @apply mt-2;
+  }
+}
+
+@media (max-width: 350px) {
+  .custom-header {
+    @apply text-[0.65em] px-0;
+  }
+
+  .custom-px {
+    @apply px-2;
+  }
+
+  .follow-us {
+    @apply text-[0.95em] gap-2;
+  }
+
+  .text-stroke {
+    -webkit-text-stroke: 0.3px #d9db;
+    ;
+    /* Adjust the stroke width and color as needed */
+    text-stroke: 1px black;
+    /* For non-webkit browsers */
+  }
+
+}
+
+@media (max-width: 320px) {
+  .custom-header {
+    @apply text-[0.6em] px-0;
+  }
+
+  .text-stroke {
+    @apply text-[2.1em];
+    -webkit-text-stroke: 0.3px #d9db;
+    ;
+    /* Adjust the stroke width and color as needed */
+    text-stroke: 1px black;
+    /* For non-webkit browsers */
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
