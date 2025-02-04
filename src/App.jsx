@@ -28,7 +28,7 @@ function App() {
 
         <Main />
 
-        <hr className="w-full border-t border-gray-500 my-4 md:border-t-slate-700" />
+        {/* <hr className="w-full border-t border-gray-500 my-4 md:border-t-slate-700" /> */}
 
         <Instructors />
 
